@@ -68,7 +68,7 @@ $ kubectl create -f jenkins-service.yaml -n jenkins
 $ kubectl get services -n jenkins
 
 NAME       TYPE        CLUSTER-IP       EXTERNAL-IP    PORT(S)           AGE
-jenkins    NodePort    10.103.31.217    <none>         8080:32664/TCP    59s
+jenkins    NodePort    10.100.36.255    <none>         8080:32413/TCP    33m
 ```
 
 ##### Access Jenkins dashboard
@@ -81,7 +81,7 @@ From the output above we can see that the service has been exposed on port 32664
 $ ip a
 192.168.118.99
 ```
-Now we can access the Jenkins instance at 192.168.118.99:30104/
+Now we can access the Jenkins instance at 192.168.118.99:32413/
 
 To access Jenkins, you initially need to enter your credentials. The default username for new installations is admin. The password can be obtained in several ways. This example uses the Jenkins deployment pod name.
 
